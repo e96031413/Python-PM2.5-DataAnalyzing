@@ -1,0 +1,131 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.M5P -M 4.0
+Relation:     200811-201811
+Instances:    603
+Attributes:   14
+              SO2
+              CO
+              CO2
+              O3
+              PM25
+              Nox
+              NO
+              NO2
+              THC
+              NMHC
+              CH4
+              WindSpeed
+              TEMP
+              Humidity
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+NO2 <= 15.285 : 
+|   TEMP <= 25.06 : LM1 (166/54.122%)
+|   TEMP >  25.06 : LM2 (115/26.82%)
+NO2 >  15.285 : 
+|   TEMP <= 7.945 : LM3 (202/53.923%)
+|   TEMP >  7.945 : 
+|   |   SO2 <= 2.85 : LM4 (67/27.552%)
+|   |   SO2 >  2.85 : LM5 (53/34.529%)
+
+LM num: 1
+PM25 = 
+	0.1049 * SO2 
+	+ 25.4815 * CO 
+	- 0.0006 * CO2 
+	+ 0.4884 * O3 
+	+ 0.0092 * NO 
+	+ 0.0386 * THC 
+	+ 49.658 * NMHC 
+	- 0.5634 * CH4 
+	- 1.744 * WindSpeed 
+	- 0.0771 * TEMP 
+	- 0.0194 * Humidity 
+	+ 3.332
+
+LM num: 2
+PM25 = 
+	3.3213 * SO2 
+	+ 3.2039 * CO 
+	- 0.0007 * CO2 
+	+ 0.5056 * O3 
+	+ 0.0092 * NO 
+	+ 0.2394 * NO2 
+	+ 2.1162 * THC 
+	- 0.2149 * NMHC 
+	+ 5.2636 * CH4 
+	- 2.0484 * WindSpeed 
+	- 0.1073 * TEMP 
+	- 0.0225 * Humidity 
+	- 6.0083
+
+LM num: 3
+PM25 = 
+	1.7644 * SO2 
+	+ 0.8233 * CO 
+	- 0.0002 * CO2 
+	+ 0.5195 * O3 
+	+ 0.1284 * NO 
+	+ 0.8649 * NO2 
+	+ 28.3371 * THC 
+	- 0.1888 * NMHC 
+	- 30.9142 * CH4 
+	- 0.3236 * WindSpeed 
+	- 0.0313 * Humidity 
+	- 2.5188
+
+LM num: 4
+PM25 = 
+	5.1276 * SO2 
+	+ 4.4648 * CO 
+	- 0.0075 * CO2 
+	+ 0.5275 * O3 
+	+ 0.2014 * NO 
+	+ 0.5912 * NO2 
+	+ 0.032 * THC 
+	+ 12.8784 * NMHC 
+	+ 7.2096 * CH4 
+	- 1.2245 * WindSpeed 
+	- 0.3406 * TEMP 
+	- 0.085 * Humidity 
+	- 12.1793
+
+LM num: 5
+PM25 = 
+	1.2753 * SO2 
+	+ 35.3533 * CO 
+	- 0.0018 * CO2 
+	+ 0.8936 * O3 
+	+ 1.203 * Nox 
+	+ 0.2014 * NO 
+	- 1.3397 * NO2 
+	- 0.6491 * THC 
+	- 0.1888 * NMHC 
+	+ 10.4221 * CH4 
+	- 1.3696 * WindSpeed 
+	+ 0.165 * Humidity 
+	- 43.7865
+
+Number of Rules : 5
+
+Time taken to build model: 0.05 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.654 
+Mean absolute error                      6.586 
+Root mean squared error                  8.2157
+Relative absolute error                 79.9612 %
+Root relative squared error             80.8248 %
+Total Number of Instances              603     
+

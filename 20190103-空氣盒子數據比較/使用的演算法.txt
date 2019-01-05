@@ -1,0 +1,9 @@
+°jÂkÃş¡G
+LinearRegression
+SimpleLinearRegression
+SMOreg
+¨Mµ¦¾ğ¡Ï°jÂk¡G
+M5P
+¨Mµ¦¾ğ¡G
+RandomTree
+REPTree

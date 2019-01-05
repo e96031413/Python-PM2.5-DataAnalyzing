@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLinearRegression 
+Relation:     200811-201811
+Instances:    363
+Attributes:   13
+              SO2
+              CO
+              O3
+              PM25
+              Nox
+              NO
+              NO2
+              THC
+              NMHC
+              CH4
+              WindSpeed
+              TEMP
+              Humidity
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Linear regression on NO2
+
+1.86 * NO2 + 6.07
+
+Predicting 0 if attribute value is missing.
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.7547
+Mean absolute error                      6.3695
+Root mean squared error                  7.9231
+Relative absolute error                 63.4388 %
+Root relative squared error             65.6029 %
+Total Number of Instances              363     
+

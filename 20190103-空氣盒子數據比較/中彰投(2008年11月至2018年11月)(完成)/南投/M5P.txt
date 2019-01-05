@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.M5P -M 4.0
+Relation:     200811-201811
+Instances:    363
+Attributes:   13
+              SO2
+              CO
+              O3
+              PM25
+              Nox
+              NO
+              NO2
+              THC
+              NMHC
+              CH4
+              WindSpeed
+              TEMP
+              Humidity
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+M5 pruned model tree:
+(using smoothed linear models)
+LM1 (363/40.277%)
+
+LM num: 1
+PM25 = 
+	1.4961 * SO2 
+	+ 18.6276 * CO 
+	+ 0.4393 * O3 
+	+ 0.3021 * Nox 
+	- 1.5655 * NO 
+	+ 1.4799 * NO2 
+	- 3.8048 * THC 
+	- 0.1716 * TEMP 
+	- 0.1759 * Humidity 
+	+ 4.5722
+
+Number of Rules : 1
+
+Time taken to build model: 0.16 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.9153
+Mean absolute error                      3.7113
+Root mean squared error                  4.8644
+Relative absolute error                 36.9635 %
+Root relative squared error             40.2767 %
+Total Number of Instances              363     
+

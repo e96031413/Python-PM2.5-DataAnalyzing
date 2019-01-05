@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import requests      # 匯入 requests 套件
 import pandas as pd
 
