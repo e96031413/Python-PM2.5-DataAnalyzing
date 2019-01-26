@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     200811-201811
+Instances:    1447
+Attributes:   14
+              SO2
+              CO
+              O3
+              PM25
+              Nox
+              NO
+              NO2
+              THC
+              NMHC
+              CH4
+              WindSpeed
+              TEMP
+              Humidity
+              CO2
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+PM25 =
+
+     -0.457  * SO2 +
+      0.5821 * O3 +
+      1.7006 * NO2 +
+     -7.245  * NMHC +
+     -0.9784 * CH4 +
+     -0.4963 * TEMP +
+     -0.1101 * Humidity +
+     -0.457  * CO2 +
+      8.4902
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.8974
+Mean absolute error                      5.5813
+Root mean squared error                  7.3843
+Relative absolute error                 39.4686 %
+Root relative squared error             44.1132 %
+Total Number of Instances             1447     
+

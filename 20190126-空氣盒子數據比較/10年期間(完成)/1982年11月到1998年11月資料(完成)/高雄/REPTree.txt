@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     198211-199811
+Instances:    1161
+Attributes:   12
+              SO2
+              CO
+              O3
+              PM25
+              Nox
+              NO
+              NO2
+              THC
+              NMHC
+              CH4
+              TEMP
+              CO2
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+ : 1.35 (774/73.58) [387/58.84]
+
+Size of the tree : 1
+
+Time taken to build model: 0.06 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.02 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0     
+Mean absolute error                      2.6224
+Root mean squared error                  8.285 
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances             1161     
+
