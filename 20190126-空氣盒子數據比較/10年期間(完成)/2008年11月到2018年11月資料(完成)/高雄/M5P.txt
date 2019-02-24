@@ -1,0 +1,279 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.M5P -M 4.0
+Relation:     200811-201811
+Instances:    1447
+Attributes:   14
+              SO2
+              CO
+              O3
+              PM25
+              Nox
+              NO
+              NO2
+              THC
+              NMHC
+              CH4
+              WindSpeed
+              TEMP
+              Humidity
+              CO2
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+NO2 <= 18.185 : 
+|   TEMP <= 27.905 : 
+|   |   O3 <= 27.85 : 
+|   |   |   SO2 <= 3.85 : 
+|   |   |   |   CO <= 0.42 : 
+|   |   |   |   |   CO <= 0.255 : LM1 (28/17.271%)
+|   |   |   |   |   CO >  0.255 : LM2 (19/37.818%)
+|   |   |   |   CO >  0.42 : LM3 (12/39.435%)
+|   |   |   SO2 >  3.85 : LM4 (151/18.767%)
+|   |   O3 >  27.85 : LM5 (288/35.177%)
+|   TEMP >  27.905 : 
+|   |   O3 <= 27.75 : 
+|   |   |   O3 <= 22.15 : LM6 (111/18.9%)
+|   |   |   O3 >  22.15 : 
+|   |   |   |   Humidity <= 76.585 : LM7 (44/14.95%)
+|   |   |   |   Humidity >  76.585 : 
+|   |   |   |   |   WindSpeed <= 2.355 : LM8 (31/14.303%)
+|   |   |   |   |   WindSpeed >  2.355 : 
+|   |   |   |   |   |   TEMP <= 29.355 : LM9 (5/11.08%)
+|   |   |   |   |   |   TEMP >  29.355 : LM10 (3/15.68%)
+|   |   O3 >  27.75 : LM11 (90/20.415%)
+NO2 >  18.185 : 
+|   TEMP <= 9.1 : 
+|   |   NO2 <= 24.36 : LM12 (184/51.747%)
+|   |   NO2 >  24.36 : LM13 (219/46.869%)
+|   TEMP >  9.1 : LM14 (262/30.856%)
+
+LM num: 1
+PM25 = 
+	-0.0615 * SO2 
+	+ 15.4532 * CO 
+	+ 0.4189 * O3 
+	- 0.4341 * Nox 
+	- 0.7925 * NO 
+	+ 1.5012 * NO2 
+	- 0.9007 * THC 
+	- 11.7682 * NMHC 
+	+ 0.6672 * CH4 
+	- 0.0978 * WindSpeed 
+	- 0.0432 * TEMP 
+	- 0.0048 * Humidity 
+	+ 0.8243
+
+LM num: 2
+PM25 = 
+	-0.0615 * SO2 
+	+ 15.4532 * CO 
+	+ 0.294 * O3 
+	- 0.6071 * Nox 
+	- 0.7925 * NO 
+	+ 0.7328 * NO2 
+	- 2.1609 * THC 
+	- 11.7682 * NMHC 
+	+ 0.6672 * CH4 
+	- 0.0978 * WindSpeed 
+	- 0.0432 * TEMP 
+	- 0.0048 * Humidity 
+	+ 15.5356
+
+LM num: 3
+PM25 = 
+	-1.8629 * SO2 
+	+ 25.2906 * CO 
+	+ 0.1556 * O3 
+	+ 0.4938 * Nox 
+	- 1.702 * NO 
+	+ 0.146 * NO2 
+	- 1.3274 * THC 
+	- 11.7682 * NMHC 
+	+ 0.6672 * CH4 
+	- 0.0978 * WindSpeed 
+	- 0.0432 * TEMP 
+	- 0.0048 * Humidity 
+	+ 18.4192
+
+LM num: 4
+PM25 = 
+	0.5647 * SO2 
+	+ 5.5894 * CO 
+	+ 0.7239 * O3 
+	+ 1.5144 * Nox 
+	- 1.8169 * NO 
+	- 1.3322 * NO2 
+	- 17.7421 * NMHC 
+	+ 2.6733 * CH4 
+	- 0.0978 * WindSpeed 
+	- 0.0432 * TEMP 
+	- 0.0048 * Humidity 
+	+ 0.2399
+
+LM num: 5
+PM25 = 
+	-1.4883 * SO2 
+	+ 54.456 * CO 
+	+ 0.5919 * O3 
+	- 0.2725 * Nox 
+	- 0.0749 * NO 
+	+ 1.2781 * NO2 
+	- 46.1982 * NMHC 
+	+ 1.388 * CH4 
+	- 1.5348 * WindSpeed 
+	- 0.3873 * TEMP 
+	+ 0.2137 * Humidity 
+	- 23.5715
+
+LM num: 6
+PM25 = 
+	-0.0341 * SO2 
+	+ 1.0071 * CO 
+	+ 0.0826 * O3 
+	+ 0.0908 * Nox 
+	- 1.3765 * NO 
+	+ 0.8195 * NO2 
+	- 1.1662 * NMHC 
+	- 0.0194 * CH4 
+	- 0.1948 * WindSpeed 
+	- 0.0292 * TEMP 
+	- 0.2306 * Humidity 
+	+ 21.9836
+
+LM num: 7
+PM25 = 
+	0.0447 * SO2 
+	+ 0.827 * CO 
+	+ 0.0872 * O3 
+	+ 0.0991 * Nox 
+	- 0.332 * NO 
+	+ 0.1058 * NO2 
+	- 0.9311 * NMHC 
+	- 0.0377 * CH4 
+	- 0.2228 * WindSpeed 
+	- 0.213 * TEMP 
+	- 0.1153 * Humidity 
+	+ 24.3732
+
+LM num: 8
+PM25 = 
+	0.1987 * SO2 
+	+ 0.827 * CO 
+	+ 0.0872 * O3 
+	+ 0.0991 * Nox 
+	- 0.332 * NO 
+	+ 0.1058 * NO2 
+	- 0.9311 * NMHC 
+	- 0.0377 * CH4 
+	+ 0.936 * WindSpeed 
+	- 0.566 * TEMP 
+	- 0.1213 * Humidity 
+	+ 31.2149
+
+LM num: 9
+PM25 = 
+	0.3455 * SO2 
+	+ 0.827 * CO 
+	+ 0.0872 * O3 
+	+ 0.0991 * Nox 
+	- 0.332 * NO 
+	+ 0.1058 * NO2 
+	- 0.9311 * NMHC 
+	- 0.0377 * CH4 
+	- 0.2228 * WindSpeed 
+	- 1.3112 * TEMP 
+	- 0.1213 * Humidity 
+	+ 53.8669
+
+LM num: 10
+PM25 = 
+	0.3455 * SO2 
+	+ 0.827 * CO 
+	+ 0.0872 * O3 
+	+ 0.0991 * Nox 
+	- 0.332 * NO 
+	+ 0.1058 * NO2 
+	- 0.9311 * NMHC 
+	- 0.0377 * CH4 
+	- 0.2228 * WindSpeed 
+	- 1.3567 * TEMP 
+	- 0.1213 * Humidity 
+	+ 54.9433
+
+LM num: 11
+PM25 = 
+	-0.0341 * SO2 
+	- 14.3807 * CO 
+	+ 0.3941 * O3 
+	+ 1.0587 * Nox 
+	- 2.4137 * NO 
+	+ 0.0598 * NO2 
+	- 1.9891 * NMHC 
+	+ 0.0447 * CH4 
+	- 1.724 * WindSpeed 
+	- 0.0292 * TEMP 
+	- 0.0301 * Humidity 
+	+ 7.4417
+
+LM num: 12
+PM25 = 
+	-0.0722 * SO2 
+	+ 40.8207 * CO 
+	+ 0.4351 * O3 
+	- 0.0174 * Nox 
+	+ 1.8644 * NO2 
+	- 102.5578 * NMHC 
+	+ 8.4565 * CH4 
+	- 0.0334 * TEMP 
+	- 0.0084 * Humidity 
+	- 20.9736
+
+LM num: 13
+PM25 = 
+	-0.0677 * SO2 
+	- 1.0077 * CO 
+	+ 0.0373 * O3 
+	- 1.0758 * Nox 
+	+ 0.8278 * NO 
+	+ 2.1926 * NO2 
+	- 26.6486 * NMHC 
+	+ 5.3268 * CH4 
+	- 0.0334 * TEMP 
+	- 0.3347 * Humidity 
+	+ 50.0478
+
+LM num: 14
+PM25 = 
+	-1.0195 * SO2 
+	- 0.4258 * CO 
+	+ 0.3587 * O3 
+	- 0.508 * NO 
+	+ 1.1346 * NO2 
+	+ 15.147 * NMHC 
+	- 3.3371 * CH4 
+	- 1.3413 * TEMP 
+	- 0.0115 * Humidity 
+	+ 41.8803
+
+Number of Rules : 14
+
+Time taken to build model: 0.17 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.9355
+Mean absolute error                      4.1551
+Root mean squared error                  5.914 
+Relative absolute error                 29.3832 %
+Root relative squared error             35.3299 %
+Total Number of Instances             1447     
+

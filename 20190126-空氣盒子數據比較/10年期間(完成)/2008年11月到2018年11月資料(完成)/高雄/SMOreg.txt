@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMOreg -C 1.0 -N 0 -I "weka.classifiers.functions.supportVector.RegSMOImproved -T 0.001 -V -P 1.0E-12 -L 0.001 -W 1" -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007"
+Relation:     200811-201811
+Instances:    1447
+Attributes:   14
+              SO2
+              CO
+              O3
+              PM25
+              Nox
+              NO
+              NO2
+              THC
+              NMHC
+              CH4
+              WindSpeed
+              TEMP
+              Humidity
+              CO2
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+SMOreg
+
+weights (not support vectors):
+ -       0.1066 * (normalized) SO2
+ +       0.0571 * (normalized) CO
+ +       0.4089 * (normalized) O3
+ +       0.2838 * (normalized) Nox
+ -       0.1152 * (normalized) NO
+ +       0.6286 * (normalized) NO2
+ -       0.0608 * (normalized) THC
+ -       0.0411 * (normalized) NMHC
+ +       0.0317 * (normalized) CH4
+ +       0.0068 * (normalized) WindSpeed
+ -       0.2008 * (normalized) TEMP
+ -       0.202  * (normalized) Humidity
+ -       0.1066 * (normalized) CO2
+ +       0.1715
+
+
+
+Number of kernel evaluations: 2804351 (88.593% cached)
+
+Time taken to build model: 1.59 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.8969
+Mean absolute error                      5.5515
+Root mean squared error                  7.4146
+Relative absolute error                 39.2581 %
+Root relative squared error             44.2945 %
+Total Number of Instances             1447     
+
