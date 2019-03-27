@@ -1,0 +1,9 @@
+Linear regression,
+Neural network,
+Lasso,
+ElasticNet,
+Decision forest,
+Extra Trees,
+Boosted,
+decisiontree,
+XGBoost
