@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="TEMP <= 26.4\nmse = 297.5\nsamples = 7254\nvalue = 21.7"] ;
+1 [label="Humidity <= 84.5\nmse = 332.6\nsamples = 4054\nvalue = 27.7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="TEMP <= 20.6\nmse = 318.9\nsamples = 3796\nvalue = 28.9"] ;
+1 -> 2 ;
+3 [label="mse = 347.1\nsamples = 1976\nvalue = 25.6"] ;
+2 -> 3 ;
+4 [label="mse = 262.4\nsamples = 1820\nvalue = 32.5"] ;
+2 -> 4 ;
+5 [label="Humidity <= 86.6\nmse = 225.8\nsamples = 258\nvalue = 10.8"] ;
+1 -> 5 ;
+6 [label="mse = 299.5\nsamples = 72\nvalue = 18.3"] ;
+5 -> 6 ;
+7 [label="mse = 162.6\nsamples = 186\nvalue = 7.7"] ;
+5 -> 7 ;
+8 [label="O3 <= 28.8\nmse = 151.6\nsamples = 3200\nvalue = 14.2"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="NO2 <= 21.5\nmse = 55.3\nsamples = 1928\nvalue = 8.5"] ;
+8 -> 9 ;
+10 [label="mse = 46.1\nsamples = 1870\nvalue = 8.1"] ;
+9 -> 10 ;
+11 [label="mse = 143.0\nsamples = 58\nvalue = 23.8"] ;
+9 -> 11 ;
+12 [label="CH4 <= 1.9\nmse = 173.5\nsamples = 1272\nvalue = 23.1"] ;
+8 -> 12 ;
+13 [label="mse = 91.1\nsamples = 745\nvalue = 18.4"] ;
+12 -> 13 ;
+14 [label="mse = 214.4\nsamples = 527\nvalue = 29.7"] ;
+12 -> 14 ;
+}
