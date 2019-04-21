@@ -1,0 +1,22 @@
+預測PM2.5
+
+線性回歸
+
+Mean Absolute Error (MAE)代表平均誤差，公式為所有實際值及預測值相減的絕對值平均。
+
+5.694068343810315
+
+Mean Squared Error (MSE)比起MSE可以拉開誤差差距，算是蠻常用的指標，公式所有實際值及預測值相減的平方的平均
+
+54.77458000595562
+
+Root Mean Squared Error (RMSE)代表MSE的平方根。比起MSE更為常用，因為更容易解釋y。
+
+7.400985069972484
+
+
+K相鄰
+
+knn.score(X_test, y_test)
+
+0.9287356321839081
