@@ -1,7 +1,8 @@
 # -*- coding: UTF-8 -*-
 import requests      # 匯入 requests 套件
 import pandas as pd
-
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 df = pd.read_csv("https://opendata.epa.gov.tw/ws/Data/ATM00625/?$format=csv")
 b=df.drop(labels=['DataCreationDate','ItemUnit'],axis='columns')
 df1 = b.set_index(['county'])
