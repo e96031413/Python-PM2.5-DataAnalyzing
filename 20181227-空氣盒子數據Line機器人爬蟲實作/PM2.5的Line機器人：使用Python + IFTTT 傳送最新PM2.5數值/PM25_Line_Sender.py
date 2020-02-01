@@ -3,10 +3,11 @@ import requests      # 匯入 requests 套件
 import pandas as pd
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
-df = pd.read_csv("https://opendata.epa.gov.tw/ws/Data/ATM00625/?$format=csv")
-b=df.drop(labels=['DataCreationDate','ItemUnit'],axis='columns')
-df1 = b.set_index(['county'])
-i=df1.loc['高雄市']
+url = 'http://opendata.epa.gov.tw/webapi/Data/REWIQA/?$orderby=SiteName&$skip=0&$top=1000&format=csv'
+df = pd.read_csv(url)
+
+i = df[['County','SiteName','AQI']]
+i = i.set_index(['County']).loc['高雄市']
 print(i)
 
 def send_ifttt(v1):   # 定義函式來向 IFTTT 發送 HTTP 要求
@@ -20,5 +21,3 @@ def send_ifttt(v1):   # 定義函式來向 IFTTT 發送 HTTP 要求
 
 ret = send_ifttt(i)  #傳送 HTTP 請求到 IFTTT
 print('IFTTT 的回應訊息：',ret)     # 輸出 IFTTT 回應的文字
-
-
